@@ -100,3 +100,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-25
 - feat: add reality check examples in verdict
 
+## 2026-02-01
+- feat: implement multi-step decision creation flow
+
