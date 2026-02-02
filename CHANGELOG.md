@@ -103,3 +103,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-01
 - feat: implement multi-step decision creation flow
 
+## 2026-02-02
+- fix: handle equal weight arguments correctly
+
