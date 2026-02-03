@@ -61,3 +61,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-15
 - refactor: clean up multi-step flow components
 
+## 2026-02-03
+- chore: update Expo SDK dependencies
+
