@@ -106,3 +106,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-02
 - fix: handle equal weight arguments correctly
 
+## 2026-02-04
+- feat: add haptic feedback on verdict screen
+
