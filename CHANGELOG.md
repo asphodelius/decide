@@ -88,3 +88,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-12
 - feat: add English/Russian localization with i18next
 
+## 2026-02-06
+- feat: add weighted arguments and emotional tags support
+
