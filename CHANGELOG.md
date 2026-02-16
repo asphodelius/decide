@@ -121,3 +121,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-08
 - feat: add English/Russian localization with i18next
 
+## 2026-02-16
+- feat: add dynamic Android app icon toggle (native layer)
+
