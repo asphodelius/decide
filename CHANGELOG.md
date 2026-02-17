@@ -109,3 +109,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-04
 - feat: add haptic feedback on verdict screen
 
+## 2026-02-17
+- fix: gesture handler conflicts with Reanimated
+
