@@ -70,3 +70,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-03-04
 - feat: support dark/light/system themes with Material You accents
 
+## 2026-02-19
+- chore: update Expo SDK dependencies
+
