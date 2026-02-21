@@ -52,3 +52,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 
 [Unreleased]: https://github.com/asphodelius/decide/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/asphodelius/decide/releases/tag/v1.0.0
+## 2026-02-21
+- fix: handle equal weight arguments correctly
+
