@@ -97,3 +97,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-27
 - feat: add Expo Notifications for outcome reminders
 
+## 2026-02-25
+- feat: add reality check examples in verdict
+
