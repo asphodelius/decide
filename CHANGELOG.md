@@ -94,3 +94,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-03-05
 - fix: prevent infinite loop in decision engine edge cases
 
+## 2026-02-27
+- feat: add Expo Notifications for outcome reminders
+
