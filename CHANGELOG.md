@@ -64,3 +64,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-03
 - chore: update Expo SDK dependencies
 
+## 2026-03-01
+- fix: TypeScript types for Zustand decision store
+
