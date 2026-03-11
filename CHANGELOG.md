@@ -112,3 +112,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-17
 - fix: gesture handler conflicts with Reanimated
 
+## 2026-03-11
+- chore: update Expo SDK dependencies
+
