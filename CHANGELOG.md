@@ -130,3 +130,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-03-17
 - feat: add dynamic Android app icon toggle (native layer)
 
+## 2026-03-13
+- feat: add haptic feedback on verdict screen
+
