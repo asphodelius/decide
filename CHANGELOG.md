@@ -76,3 +76,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-03-07
 - chore: format code with Prettier and ESLint
 
+## 2026-03-14
+- perf: optimize pattern summary calculations
+
