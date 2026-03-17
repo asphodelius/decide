@@ -127,3 +127,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-02-28
 - perf: optimize AsyncStorage operations for history
 
+## 2026-03-17
+- feat: add dynamic Android app icon toggle (native layer)
+
