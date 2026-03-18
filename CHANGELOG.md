@@ -115,3 +115,6 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 ## 2026-03-11
 - chore: update Expo SDK dependencies
 
+## 2026-03-18
+- feat: add weighted arguments and emotional tags support
+
