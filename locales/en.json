@@ -1,0 +1,190 @@
+{
+  "common": {
+    "appName": "Decide.",
+    "continue": "Continue",
+    "back": "Back",
+    "skip": "Skip",
+    "cancel": "Cancel",
+    "save": "Save",
+    "settings": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "accent": "Accent",
+    "active": "On",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "unknown": "Unknown",
+    "hours24": "24h",
+    "days3": "3 days",
+    "none": "None",
+    "price": "Price",
+    "note": "Note",
+    "pros": "Pros",
+    "cons": "Cons",
+    "review": "Review",
+    "weights": "Weights",
+    "title": "Title",
+    "verdict": "Verdict"
+  },
+  "home": {
+    "eyebrow": "Psychological decision engine",
+    "headline": "Decide.",
+    "subline": "A sharper mirror for the choices that keep asking for your attention.",
+    "create": "Start a decision",
+    "resume": "Resume current draft",
+    "resumeMeta": "{{count}} signals already captured",
+    "historyTitle": "Decision history",
+    "historyEmptyTitle": "Nothing logged yet",
+    "historyEmptyBody": "Start with the choice you keep rationalizing. The app will do the uncomfortable part.",
+    "timelineLabel": "Timeline",
+    "quickStatsVerdict": "Latest verdict",
+    "quickStatsHistory": "Tracked calls",
+    "quickStatsDraft": "Live draft",
+    "patternSummaryTitle": "Pattern summary",
+    "successRateTitle": "Desire vs logic",
+    "successRateDesire": "Desire-led",
+    "successRateLogic": "Logic-led",
+    "successRateEmpty": "Need more completed decisions before the graph says anything honest.",
+    "settings": "Tune the atmosphere",
+    "outcomeLoopTitle": "Close the loop",
+    "outcomeLoopBody": "\"{{title}}\" has been unresolved for {{days}} days. Mark how it actually landed.",
+    "outcomeLoopCta": "Review outcome",
+    "patternSummary": {
+      "regretTitle": "Regret has the edge",
+      "regretBody": "{{regrets}} of {{total}} completed decisions ended in regret. Your pattern is asking for more friction.",
+      "worthItTitle": "Your best calls hold up",
+      "worthItBody": "{{worthIt}} of {{total}} completed decisions held up well. Your pattern improves when you wait for clean conviction.",
+      "mixedTitle": "Ambivalence is common",
+      "mixedBody": "{{mixed}} of {{total}} completed decisions landed in the middle. Your problem may be weak clarity, not bad instinct."
+    }
+  },
+  "create": {
+    "header": "Build the tension",
+    "titleStep": "Name the decision before the story gets too flattering.",
+    "titleHint": "This should be specific enough to sting.",
+    "titlePlaceholder": "Buy the new laptop",
+    "pricePlaceholder": "320",
+    "notePlaceholder": "What are you telling yourself to make this feel justified?",
+    "prosStep": "What genuinely makes this a yes?",
+    "prosHint": "Keep the list honest. Glamour points don't count unless they matter.",
+    "prosPlaceholder": "It would remove a real bottleneck",
+    "consStep": "What makes this heavier than it looks?",
+    "consHint": "Name the friction you usually smooth over.",
+    "consPlaceholder": "The timing is financially reckless",
+    "weightsStep": "Now stop pretending every point matters equally.",
+    "weightsHint": "Weight each signal and tag the emotional bias behind it.",
+    "reviewStep": "This is the shape of the choice right now.",
+    "reviewHint": "Delay it if clarity still feels rented.",
+    "addPro": "Add a pro",
+    "addCon": "Add a con",
+    "decisionDelay": "Decision delay",
+    "finalize": "See the verdict",
+    "validationTitle": "The decision still isn't clear enough.",
+    "validationBody": "Give it a title and at least one pro and one con before asking for the verdict.",
+    "stepLabel": "Step {{current}} / {{total}}"
+  },
+  "result": {
+    "biasYes": "YES",
+    "biasNo": "NO",
+    "biasPause": "WAIT",
+    "realityChecks": "Reality check",
+    "costReframing": "Cost reframing",
+    "patternMemory": "Pattern memory",
+    "historyEcho": "Pattern echo",
+    "markOutcome": "How did this actually land?",
+    "outcomeUnknown": "Too early",
+    "outcomeWorthIt": "Worth it",
+    "outcomeRegret": "Regret",
+    "outcomeMixed": "Mixed",
+    "backHome": "Back to home",
+    "workdays": "~{{days}} workdays",
+    "pricedAt": "Signal cost {{value}}",
+    "balanceYes": "Yes energy",
+    "balanceNo": "No gravity",
+    "scoreLabel": "Score {{score}}",
+    "delayScheduled": "Reminder set for {{date}}",
+    "delayMissed": "Reminder window passed",
+    "reframes": {
+      "coffeeRuns": "About {{count}} coffee runs",
+      "metroTrips": "About {{count}} metro rides",
+      "rideShares": "About {{count}} ride shares",
+      "streamingMonths": "About {{count}} months of subscriptions"
+    },
+    "patterns": {
+      "similarRegret": "A very similar decision already ended in regret.",
+      "similarMixed": "A close version of this call already landed as mixed.",
+      "expensiveRegret": "Your expensive calls tend to age badly.",
+      "desireUnderperforms": "When desire drives harder than logic, your outcomes usually soften."
+    },
+    "patternMetrics": {
+      "expensiveTitle": "High-cost track record",
+      "expensiveBody": "{{misses}} of {{total}} similarly priced decisions ended mixed or regret.",
+      "desireTitle": "Desire-led hit rate",
+      "desireBody": "Only {{worthIt}} of {{total}} desire-led decisions ended as worth it.",
+      "repeatTitle": "Repeat loop",
+      "repeatBody": "{{misses}} of {{total}} close repeats failed to end cleanly."
+    }
+  },
+  "settings": {
+    "headline": "Settings",
+    "subline": "Keep the interface quiet, adaptive, and immediate. Theme changes should feel native, not theatrical.",
+    "languageTitle": "Language",
+    "themeTitle": "Theme",
+    "accentTitle": "Accent tone",
+    "dynamicIconTitle": "Dynamic app icon",
+    "dynamicIconBody": "Use the Material You launcher icon when your Android launcher supports themed icons.",
+    "accentDynamicAndroid": "Android 12+ dynamic accent",
+    "accentDynamicFallback": "Fallback accent outside Android",
+    "previewTitle": "Preview",
+    "previewBody": "The interface should feel like a calm interrogation, not a form."
+  },
+  "themeOptions": {
+    "material_you": "Material You",
+    "ice": "Ice",
+    "ember": "Ember",
+    "mint": "Mint",
+    "rose": "Rose"
+  },
+  "languageOptions": {
+    "en": "English",
+    "ru": "Russian"
+  },
+  "emotionTags": {
+    "logic": "Logic",
+    "desire": "Desire",
+    "fear": "Fear",
+    "comfort": "Comfort",
+    "growth": "Growth",
+    "status": "Status"
+  },
+  "verdict": {
+    "headlines": {
+      "yes": "This can stand up to scrutiny.",
+      "no": "This asks for more than it gives back.",
+      "pause": "You do not have clean conviction yet."
+    },
+    "sublines": {
+      "yes": "The signal is positive, but not blind.",
+      "no": "The friction is doing you a favor.",
+      "pause": "Delay beats rationalized urgency."
+    },
+    "narratives": {
+      "commit": "This looks grounded enough to move on purpose.",
+      "release": "Walking away here is a form of discipline.",
+      "pause": "Clarity is not late. Impulse is.",
+      "historyRepeat": "You've made a close cousin of this call before. That memory matters.",
+      "moneyConflict": "You said stability matters. The price disagrees.",
+      "impulse": "This feels emotionally loud and logically underdressed."
+    }
+  },
+  "realityChecks": {
+    "thin_evidence": "You're trying to decide with very little evidence.",
+    "price_vs_pressure": "You said money pressure exists. This choice still demands cash.",
+    "impulse_bias": "This reads more like urgency theater than a clean need.",
+    "history_repeat": "You've been here before, and the pattern was not flattering.",
+    "desire_over_logic": "Emotion is driving harder than logic right now.",
+    "cons_heavy": "The downside already carries more weight than the upside.",
+    "need_more_time": "The honest answer may be 'not yet'."
+  }
+}
