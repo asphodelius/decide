@@ -1,66 +1,48 @@
 <div align="center">
-  <img src="./assets/icon.png" alt="Decide icon" width="144" height="144" />
-  <h1>Decide.</h1>
-  <p>A psychological decision engine for impulse, friction, and honest tradeoffs.</p>
+  <img src="./assets/icon.png" alt="Decide icon" width="120" height="120" />
 
-  <p>
-    <a href="https://github.com/asphodelius/decide/releases">
-      <img src="https://img.shields.io/github/v/release/asphodelius/decide?style=for-the-badge" alt="Latest release" />
-    </a>
-    <a href="https://github.com/asphodelius/decide/releases">
-      <img src="https://img.shields.io/github/downloads/asphodelius/decide/total?style=for-the-badge" alt="Downloads" />
-    </a>
-    <a href="https://github.com/asphodelius/decide">
-      <img src="https://img.shields.io/github/repo-size/asphodelius/decide?style=for-the-badge" alt="Repo size" />
-    </a>
+  <h1>Decide</h1>
+  <p><i>Think before you act.</i></p>
+
+  <p align="center">
+    <img src="https://img.shields.io/badge/react--native-20232A?style=flat-square&logo=react" alt="React Native" />
+    <img src="https://img.shields.io/badge/expo-000000?style=flat-square&logo=expo" alt="Expo" />
+    <img src="https://img.shields.io/badge/typescript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/local--first-111827?style=flat-square" alt="Local-first" />
   </p>
 </div>
 
-## What It Is
+---
 
-`Decide.` is not a checklist app and not a productivity utility.
+## What it is
 
-It is a local-first mobile app that helps you pressure-test choices before you romanticize them:
+Decide is a local-first mobile app for slowing down and making better decisions.
 
-- create a decision
+Not a to-do list.  
+Not a productivity tool.
+
+It helps you:
+
+- define a decision clearly
 - weigh pros and cons
 - tag emotional bias
 - run reality checks
-- review a final verdict
-- track how your choices actually turned out
+- review the outcome
+- come back later and see what actually happened
 
-The goal is simple: slow down bad decisions and make good ones easier to recognize.
+The goal is simple: create enough friction to stop impulsive choices and enough clarity to make honest ones.
 
-## Highlights
+## Why it matters
 
-- Multi-step decision flow built with Expo Router
-- English and Russian localization with instant switching
-- Dark, light, and system theme modes
-- Material You accent support on Android 12+
-- Dynamic Android app icon support with in-app toggle
-- Weighted pros and cons with emotional tags
-- Reality checks based on cost, pressure, impulse, and history
-- Cost reframing for money decisions
-- Pattern memory from previous decisions
-- Outcome loop and decision history
-- Fully local data storage with AsyncStorage
+Most bad decisions do not feel bad at the moment.
 
-## Tech Stack
+They feel justified, urgent, emotional, or convenient.
 
-- React Native
-- Expo
-- Expo Router
-- TypeScript
-- Zustand
-- Reanimated
-- AsyncStorage
-- i18next
+Decide is built to close that gap by making tradeoffs visible before you act, then turning past choices into feedback instead of vague memory.
 
-## Core Experience
+## Core flow
 
-### Decision Flow
-
-The main flow is split into separate steps:
+Each decision moves through a deliberate multi-step flow:
 
 1. Title
 2. Pros
@@ -68,45 +50,38 @@ The main flow is split into separate steps:
 4. Weights
 5. Review
 
-Each step is designed to feel deliberate, animated, and low-noise rather than form-heavy.
+After that, the app keeps the decision in history so you can reflect on whether the result actually matched your expectations.
 
-### Result Screen
+## Key features
 
-The result screen combines:
+- Weighted pros and cons
+- Emotional bias tags
+- Reality checks for impulse, cost, pressure, and context
+- Cost reframing for money decisions
+- Outcome tracking
+- Decision history and pattern memory
+- Fully offline storage on device
 
-- final verdict
-- visual balance
-- reality checks
-- cost reframing
-- pattern memory
-- outcome tracking
+## Experience
 
-### History and Feedback Loop
+- Clean multi-step flow with motion and low visual noise
+- English and Russian localization with instant switching
+- Dark, light, and system theme modes
+- Material You accent support on Android 12+
+- Dynamic Android app icon support
 
-`Decide.` remembers what you chose and asks whether it actually held up later.
+## Tech stack
 
-That turns the app from a one-time decision helper into a personal pattern mirror.
+- React Native
+- Expo
+- Expo Router
+- TypeScript
+- Zustand
+- React Native Reanimated
+- AsyncStorage
+- i18next
 
-## Localization
-
-Supported languages:
-
-- English
-- Russian
-
-All UI strings are localized and language choice is persisted locally.
-
-## Theming
-
-Theme options:
-
-- Dark
-- Light
-- System
-
-Accent options include Material You on supported Android devices, with fallback accent palettes on other platforms.
-
-## Project Structure
+## Project structure
 
 ```text
 app/
@@ -119,11 +94,11 @@ android/
 assets/
 ```
 
-## Development Setup
+## Run locally
 
 ### Requirements
 
-- Node 22 LTS recommended
+- Node 20.19+ or Node 22 LTS
 - JDK 17 for Android builds
 - Android SDK / platform-tools
 
@@ -133,32 +108,25 @@ assets/
 npm install
 ```
 
-### Run Expo
+### Start Expo
 
 ```bash
 npx expo start
 ```
 
-### Build Android Dev Client
+### Run on Android
 
 ```bash
 npx expo run:android --device
 ```
 
-## Releases
-
-Releases are published on GitHub:
-
-- Latest releases: https://github.com/asphodelius/decide/releases
-
-When APK builds are attached, they should live there rather than in ad-hoc file shares.
-
 ## Notes
 
-- The app is currently local-first and does not require a backend.
-- Some Android-specific behavior, like themed icons, depends on launcher support.
-- Native Android files are committed because the project includes custom icon behavior and native bridge code.
+- The app is local-first and does not require a backend.
+- Language and theme preferences are stored locally.
+- Some Android-specific features, such as themed icons and Material You accents, depend on launcher and OS support.
+- Native Android files are committed because the project includes platform-specific behavior.
 
-## Credits
+## License
 
-Built as a premium React Native / Expo mobile experience focused on psychological decision-making, material motion, and local-first UX.
+GPL-3.0. See [LICENSE](./LICENSE).

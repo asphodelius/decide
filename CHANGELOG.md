@@ -10,6 +10,19 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 
 - Ongoing UI, copy, motion, and readability polish across the decision flow and settings screens.
 
+## [1.0.1] - 2026-03-20
+
+### Added
+
+- Added the `asphodelius` theme inspired by the visual language of the portfolio at `asphodelius.dev`.
+- Added a portfolio link and author credit block to the settings screen.
+
+### Changed
+
+- Refined the settings experience with a stronger branded accent selection flow.
+- Refreshed the project README to better match the current product direction and setup.
+- Made `asphodelius` the default accent tone for new installs.
+
 ## [1.0.0] - 2026-03-19
 
 ### Added
@@ -50,7 +63,8 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 - Removed the `Alternative path` block from the result experience.
 - Removed unused visual and dependency leftovers from earlier iterations.
 
-[Unreleased]: https://github.com/asphodelius/decide/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/asphodelius/decide/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/asphodelius/decide/releases/tag/v1.0.1
 [1.0.0]: https://github.com/asphodelius/decide/releases/tag/v1.0.0
 ## 2026-02-21
 - fix: handle equal weight arguments correctly

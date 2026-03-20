@@ -60,7 +60,7 @@ export const useAppStore = create<AppState>()(
       settings: {
         language: defaultLanguage,
         themePreference: "system",
-        accentTone: "material_you",
+        accentTone: "asphodelius",
         dynamicAppIcon: true,
       },
       draft: createEmptyDraft(),

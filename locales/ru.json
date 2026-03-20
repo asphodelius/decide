@@ -136,11 +136,15 @@
     "dynamicIconBody": "Использовать значок Material You, если launcher на Android поддерживает themed icons.",
     "accentDynamicAndroid": "Динамический акцент Android 12+",
     "accentDynamicFallback": "Запасной акцент вне Android",
+    "madeByTitle": "Сделано",
+    "madeByBody": "Дизайн и разработка от Asphodelius. Здесь можно открыть портфолио, из которого вырос визуальный язык приложения.",
+    "portfolioLabel": "Портфолио",
     "previewTitle": "Превью",
     "previewBody": "Интерфейс должен ощущаться как спокойный и честный разговор, а не как очередная форма."
   },
   "themeOptions": {
     "material_you": "Material You",
+    "asphodelius": "Asphodelius",
     "ice": "Лёд",
     "ember": "Уголь",
     "mint": "Мята",

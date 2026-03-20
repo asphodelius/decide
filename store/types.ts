@@ -1,6 +1,6 @@
 export type AppLanguage = "en" | "ru";
 export type ThemePreference = "dark" | "light" | "system";
-export type AccentTone = "material_you" | "ice" | "ember" | "mint" | "rose";
+export type AccentTone = "material_you" | "ice" | "ember" | "mint" | "rose" | "asphodelius";
 export type FactorKind = "pro" | "con";
 export type EmotionTag = "logic" | "desire" | "fear" | "comfort" | "growth" | "status";
 export type ReminderOption = "24h" | "3d";

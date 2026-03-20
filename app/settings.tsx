@@ -1,4 +1,5 @@
-import { Platform, Pressable, Switch, Text, View } from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
+import { Linking, Platform, Pressable, Switch, Text, View } from "react-native";
 import { useTranslation } from "react-i18next";
 
 import { AppShell } from "@/components/AppShell";
@@ -11,7 +12,7 @@ import type { AccentTone, AppLanguage, ThemePreference } from "@/store/types";
 import { useTheme } from "@/theme/provider";
 import { typography } from "@/theme/typography";
 
-const ACCENTS: AccentTone[] = ["material_you", "ice", "ember", "mint", "rose"];
+const ACCENTS: AccentTone[] = ["material_you", "asphodelius", "ice", "ember", "mint", "rose"];
 
 export default function SettingsScreen() {
   const { t } = useTranslation();
@@ -26,6 +27,9 @@ export default function SettingsScreen() {
   const setDynamicAppIcon = useAppStore((state) => state.setDynamicAppIcon);
 
   const canToggleDynamicIcon = supportsDynamicAppIconToggle();
+  const handlePortfolioOpen = () => {
+    Linking.openURL("https://asphodelius.dev").catch(() => null);
+  };
 
   const handleDynamicIconToggle = (value: boolean) => {
     setDynamicAppIcon(value);
@@ -72,6 +76,8 @@ export default function SettingsScreen() {
             const swatchColor =
               isDynamic && Platform.OS === "android"
                 ? theme.accent.base
+                : accent === "asphodelius"
+                  ? "#E8E3D9"
                 : accent === "ice"
                   ? "#6D8CFF"
                   : accent === "ember"
@@ -128,6 +134,52 @@ export default function SettingsScreen() {
           </View>
         </GlassPanel>
       ) : null}
+
+      <GlassPanel style={{ padding: 18, backgroundColor: theme.surfaceRaised }}>
+        <Text style={{ color: theme.text, fontFamily: typography.family.bold, fontSize: 18 }}>{t("settings.madeByTitle")}</Text>
+        <Text style={{ color: theme.textMuted, fontFamily: typography.family.body, fontSize: 14, lineHeight: 21, marginTop: 8 }}>
+          {t("settings.madeByBody")}
+        </Text>
+
+        <Pressable onPress={handlePortfolioOpen} style={{ marginTop: 16 }}>
+          <View
+            style={{
+              minHeight: 72,
+              borderRadius: 24,
+              backgroundColor: theme.surfaceSunken,
+              borderWidth: 1,
+              borderColor: theme.borderSoft,
+              paddingHorizontal: 14,
+              paddingVertical: 12,
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 12, flex: 1 }}>
+              <View
+                style={{
+                  width: 40,
+                  height: 40,
+                  borderRadius: 20,
+                  backgroundColor: theme.accent.container,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <MaterialIcons name="public" size={20} color={theme.accent.onContainer} />
+              </View>
+
+              <View style={{ flex: 1 }}>
+                <Text style={{ color: theme.text, fontFamily: typography.family.bold, fontSize: 14 }}>{t("settings.portfolioLabel")}</Text>
+                <Text style={{ color: theme.accent.base, fontFamily: typography.family.medium, fontSize: 13, marginTop: 3 }}>asphodelius.dev</Text>
+              </View>
+            </View>
+
+            <MaterialIcons name="open-in-new" size={18} color={theme.textSoft} />
+          </View>
+        </Pressable>
+      </GlassPanel>
 
     </AppShell>
   );

@@ -136,11 +136,15 @@
     "dynamicIconBody": "Use the Material You launcher icon when your Android launcher supports themed icons.",
     "accentDynamicAndroid": "Android 12+ dynamic accent",
     "accentDynamicFallback": "Fallback accent outside Android",
+    "madeByTitle": "Made by",
+    "madeByBody": "Designed and built by Asphodelius. Explore the portfolio behind the visual language of this app.",
+    "portfolioLabel": "Portfolio",
     "previewTitle": "Preview",
     "previewBody": "The interface should feel like a calm interrogation, not a form."
   },
   "themeOptions": {
     "material_you": "Material You",
+    "asphodelius": "Asphodelius",
     "ice": "Ice",
     "ember": "Ember",
     "mint": "Mint",
