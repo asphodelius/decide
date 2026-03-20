@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/icon.png" alt="Decide icon" width="120" height="120" />
+  <img src="./assets/decide.png" alt="Decide icon" width="120" height="120" />
 
   <h1>Decide</h1>
   <p><i>Think before you act.</i></p>
