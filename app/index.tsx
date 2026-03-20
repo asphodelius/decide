@@ -14,7 +14,7 @@ import { typography } from "@/theme/typography";
 
 export default function HomeScreen() {
   const router = useRouter();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { theme } = useTheme();
   const decisions = useAppStore((state) => state.decisions);
   const draft = useAppStore((state) => state.draft);
@@ -110,7 +110,7 @@ export default function HomeScreen() {
         </View>
       </AppShell>
 
-      <FloatingCTA label={t("home.create")} onPress={() => router.push("/create")} icon={Sparkles} />
+      <FloatingCTA key={`home-cta-${i18n.resolvedLanguage}`} label={t("home.create")} onPress={() => router.push("/create")} icon={Sparkles} />
     </View>
   );
 }

@@ -10,6 +10,14 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 
 - Ongoing UI, copy, motion, and readability polish across the decision flow and settings screens.
 
+## [1.0.2] - 2026-03-20
+
+### Fixed
+
+- Removed the added background orbs and returned the app backdrop to a clean flat surface.
+- Fixed the home CTA text glitch after switching languages multiple times.
+- Switched Android release output from a large universal APK to split ABI builds for smaller downloads.
+
 ## [1.0.1] - 2026-03-20
 
 ### Added
@@ -63,7 +71,8 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 - Removed the `Alternative path` block from the result experience.
 - Removed unused visual and dependency leftovers from earlier iterations.
 
-[Unreleased]: https://github.com/asphodelius/decide/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/asphodelius/decide/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/asphodelius/decide/releases/tag/v1.0.2
 [1.0.1]: https://github.com/asphodelius/decide/releases/tag/v1.0.1
 [1.0.0]: https://github.com/asphodelius/decide/releases/tag/v1.0.0
 ## 2026-02-21
