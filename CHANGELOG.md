@@ -10,6 +10,14 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 
 - Ongoing UI, copy, motion, and readability polish across the decision flow and settings screens.
 
+## [1.0.3] - 2026-03-20
+
+### Fixed
+
+- Reworked the home CTA layout so the localized label no longer clips into `Начат` or `Start a` after repeated language switches.
+- Simplified the `Made by` block to clean links only and added a direct repository link in settings.
+- Pointed the app config at the branded icon asset so rebuilt installs use the current `Decide.` icon consistently.
+
 ## [1.0.2] - 2026-03-20
 
 ### Fixed
@@ -71,7 +79,8 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 - Removed the `Alternative path` block from the result experience.
 - Removed unused visual and dependency leftovers from earlier iterations.
 
-[Unreleased]: https://github.com/asphodelius/decide/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/asphodelius/decide/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/asphodelius/decide/releases/tag/v1.0.3
 [1.0.2]: https://github.com/asphodelius/decide/releases/tag/v1.0.2
 [1.0.1]: https://github.com/asphodelius/decide/releases/tag/v1.0.1
 [1.0.0]: https://github.com/asphodelius/decide/releases/tag/v1.0.0

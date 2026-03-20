@@ -26,9 +26,19 @@ export function FloatingCTA({ label, onPress, icon: Icon }: FloatingCTAProps) {
             borderColor: theme.accent.outline,
           }}
         >
-          <View key={label} style={{ flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 10, minWidth: 0 }}>
-            <Icon color={theme.accent.onBase} size={18} />
-            <Text style={{ color: theme.accent.onBase, fontFamily: typography.family.bold, fontSize: 15, flexShrink: 1, textAlign: "center" }}>{label}</Text>
+          <View key={label} style={{ flexDirection: "row", alignItems: "center" }}>
+            <View style={{ width: 22, alignItems: "flex-start" }}>
+              <Icon color={theme.accent.onBase} size={18} />
+            </View>
+            <View style={{ flex: 1, minWidth: 0, paddingHorizontal: 8 }}>
+              <Text
+                numberOfLines={1}
+                style={{ color: theme.accent.onBase, fontFamily: typography.family.bold, fontSize: 15, textAlign: "center" }}
+              >
+                {label}
+              </Text>
+            </View>
+            <View style={{ width: 22 }} />
           </View>
         </View>
       </Pressable>

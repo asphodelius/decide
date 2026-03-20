@@ -137,8 +137,8 @@
     "accentDynamicAndroid": "Android 12+ dynamic accent",
     "accentDynamicFallback": "Fallback accent outside Android",
     "madeByTitle": "Made by",
-    "madeByBody": "Designed and built by Asphodelius. Explore the portfolio behind the visual language of this app.",
     "portfolioLabel": "Portfolio",
+    "repositoryLabel": "Repository",
     "previewTitle": "Preview",
     "previewBody": "The interface should feel like a calm interrogation, not a form."
   },

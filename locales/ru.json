@@ -137,8 +137,8 @@
     "accentDynamicAndroid": "Динамический акцент Android 12+",
     "accentDynamicFallback": "Запасной акцент вне Android",
     "madeByTitle": "Сделано",
-    "madeByBody": "Дизайн и разработка от Asphodelius. Здесь можно открыть портфолио, из которого вырос визуальный язык приложения.",
     "portfolioLabel": "Портфолио",
+    "repositoryLabel": "Репозиторий",
     "previewTitle": "Превью",
     "previewBody": "Интерфейс должен ощущаться как спокойный и честный разговор, а не как очередная форма."
   },

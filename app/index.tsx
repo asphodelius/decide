@@ -110,7 +110,7 @@ export default function HomeScreen() {
         </View>
       </AppShell>
 
-      <FloatingCTA key={`home-cta-${i18n.resolvedLanguage}`} label={t("home.create")} onPress={() => router.push("/create")} icon={Sparkles} />
+      <FloatingCTA key={`home-cta-${i18n.resolvedLanguage}-${t("home.create")}`} label={t("home.create")} onPress={() => router.push("/create")} icon={Sparkles} />
     </View>
   );
 }

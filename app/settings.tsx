@@ -30,6 +30,9 @@ export default function SettingsScreen() {
   const handlePortfolioOpen = () => {
     Linking.openURL("https://asphodelius.dev").catch(() => null);
   };
+  const handleRepositoryOpen = () => {
+    Linking.openURL("https://github.com/asphodelius/decide").catch(() => null);
+  };
 
   const handleDynamicIconToggle = (value: boolean) => {
     setDynamicAppIcon(value);
@@ -137,50 +140,67 @@ export default function SettingsScreen() {
 
       <GlassPanel style={{ padding: 18, backgroundColor: theme.surfaceRaised }}>
         <Text style={{ color: theme.text, fontFamily: typography.family.bold, fontSize: 18 }}>{t("settings.madeByTitle")}</Text>
-        <Text style={{ color: theme.textMuted, fontFamily: typography.family.body, fontSize: 14, lineHeight: 21, marginTop: 8 }}>
-          {t("settings.madeByBody")}
-        </Text>
 
         <Pressable onPress={handlePortfolioOpen} style={{ marginTop: 16 }}>
-          <View
-            style={{
-              minHeight: 72,
-              borderRadius: 24,
-              backgroundColor: theme.surfaceSunken,
-              borderWidth: 1,
-              borderColor: theme.borderSoft,
-              paddingHorizontal: 14,
-              paddingVertical: 12,
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 12, flex: 1 }}>
-              <View
-                style={{
-                  width: 40,
-                  height: 40,
-                  borderRadius: 20,
-                  backgroundColor: theme.accent.container,
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <MaterialIcons name="public" size={20} color={theme.accent.onContainer} />
-              </View>
+          <SettingsLinkCard
+            title="Asphodelius"
+            value="asphodelius.dev"
+            icon="public"
+          />
+        </Pressable>
 
-              <View style={{ flex: 1 }}>
-                <Text style={{ color: theme.text, fontFamily: typography.family.bold, fontSize: 14 }}>{t("settings.portfolioLabel")}</Text>
-                <Text style={{ color: theme.accent.base, fontFamily: typography.family.medium, fontSize: 13, marginTop: 3 }}>asphodelius.dev</Text>
-              </View>
-            </View>
-
-            <MaterialIcons name="open-in-new" size={18} color={theme.textSoft} />
-          </View>
+        <Pressable onPress={handleRepositoryOpen} style={{ marginTop: 12 }}>
+          <SettingsLinkCard
+            title={t("settings.repositoryLabel")}
+            value="github.com/asphodelius/decide"
+            icon="code"
+          />
         </Pressable>
       </GlassPanel>
 
     </AppShell>
+  );
+}
+
+function SettingsLinkCard({ title, value, icon }: { title: string; value: string; icon: keyof typeof MaterialIcons.glyphMap }) {
+  const { theme } = useTheme();
+
+  return (
+    <View
+      style={{
+        minHeight: 72,
+        borderRadius: 24,
+        backgroundColor: theme.surfaceSunken,
+        borderWidth: 1,
+        borderColor: theme.borderSoft,
+        paddingHorizontal: 14,
+        paddingVertical: 12,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+      }}
+    >
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 12, flex: 1 }}>
+        <View
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: 20,
+            backgroundColor: theme.accent.container,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <MaterialIcons name={icon} size={20} color={theme.accent.onContainer} />
+        </View>
+
+        <View style={{ flex: 1 }}>
+          <Text style={{ color: theme.text, fontFamily: typography.family.bold, fontSize: 14 }}>{title}</Text>
+          <Text style={{ color: theme.accent.base, fontFamily: typography.family.medium, fontSize: 13, marginTop: 3 }}>{value}</Text>
+        </View>
+      </View>
+
+      <MaterialIcons name="open-in-new" size={18} color={theme.textSoft} />
+    </View>
   );
 }
