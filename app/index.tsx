@@ -28,9 +28,11 @@ export default function HomeScreen() {
   return (
     <View style={{ flex: 1 }}>
       <AppShell scroll contentContainerStyle={{ gap: 18 }}>
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-          <View>
-            <Text style={{ color: theme.textSoft, fontFamily: typography.family.bold, fontSize: 11, letterSpacing: 1.4 }}>{t("home.eyebrow").toUpperCase()}</Text>
+        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 4, gap: 12 }}>
+          <View style={{ flex: 1, flexShrink: 1 }}>
+            <Text style={{ color: theme.textSoft, fontFamily: typography.family.bold, fontSize: 11, lineHeight: 15, letterSpacing: 1.4, flexShrink: 1 }}>
+              {t("home.eyebrow").toUpperCase()}
+            </Text>
           </View>
           <Pressable onPress={() => router.push("/settings")}>
             <GlassPanel style={{ width: 44, height: 44, borderRadius: 16, alignItems: "center", justifyContent: "center", backgroundColor: theme.surfaceRaised }}>

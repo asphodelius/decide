@@ -2,7 +2,7 @@
   "expo": {
     "name": "Decide.",
     "slug": "decide",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/decide.png",
     "scheme": "decide",

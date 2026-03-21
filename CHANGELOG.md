@@ -10,6 +10,16 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 
 - Ongoing UI, copy, motion, and readability polish across the decision flow and settings screens.
 
+## [1.0.4] - 2026-03-21
+
+### Added
+
+- Added a screenshot gallery to the README using the latest app captures from `screenshots/`.
+
+### Fixed
+
+- Fixed the home eyebrow copy so the Russian line wraps cleanly instead of clipping before `решений` on narrower Android layouts.
+
 ## [1.0.3] - 2026-03-20
 
 ### Fixed
@@ -79,7 +89,8 @@ The format is inspired by Keep a Changelog and uses semantic version tags where 
 - Removed the `Alternative path` block from the result experience.
 - Removed unused visual and dependency leftovers from earlier iterations.
 
-[Unreleased]: https://github.com/asphodelius/decide/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/asphodelius/decide/compare/v1.0.4...HEAD
+[1.0.4]: https://github.com/asphodelius/decide/releases/tag/v1.0.4
 [1.0.3]: https://github.com/asphodelius/decide/releases/tag/v1.0.3
 [1.0.2]: https://github.com/asphodelius/decide/releases/tag/v1.0.2
 [1.0.1]: https://github.com/asphodelius/decide/releases/tag/v1.0.1

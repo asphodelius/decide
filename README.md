@@ -70,6 +70,14 @@ After that, the app keeps the decision in history so you can reflect on whether 
 - Material You accent support on Android 12+
 - Dynamic Android app icon support
 
+## Screenshots
+
+<p align="center">
+  <img src="./screenshots/home.png" alt="Decide home screen" width="30%" />
+  <img src="./screenshots/build.png" alt="Decide decision builder screen" width="30%" />
+  <img src="./screenshots/verdict.png" alt="Decide verdict screen" width="30%" />
+</p>
+
 ## Tech stack
 
 - React Native
